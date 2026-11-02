@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Tank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section>
+      <label for="heightsInput">Building heights</label>
+      <input id="heightsInput" type="text" value="0,4,0,0,0,6,0,6,4,0">
+      <p class="hint">Enter non-negative numbers separated by commas.</p>
+    </section>
+
+    <section>
+      <h2>Water visualization</h2>
+      <svg id="tankChart" role="img" aria-label="Building and trapped water visualization"></svg>
+    </section>
+
+    <section class="result">
+      <h2>Total water stored</h2>
+      <p><strong id="waterTotal">18</strong> units</p>
+    </section>
+    <p id="errorMessage" class="error" aria-live="polite"></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
